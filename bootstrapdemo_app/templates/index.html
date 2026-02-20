@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Icon Technologies Africa</title>
         <link rel="stylesheet" href="{% static 'css/output.css' %}" />
-        <link rel="stylesheet" href="{% static 'css/input.css'}" />
+        <link rel="stylesheet" href="{% static 'css/input.css' %}" />
       
         <ink rel="icon" type="image/png" href="{ static 'css/assets/1-removebg-preview(1).png'}" />
     </head>
@@ -18,7 +18,7 @@
             </a>
             <div class="hidden items-center space-x-10 md:flex">
                 <a class="transition hover:text-gray-300" href="#!">Home</a>
-                <a class="transition hover:text-gray-300" href="#agents">Agents</a>
+                <a class="transition hover:text-gray-300" href="{% url 'about' %}">About</a>
                 <a class="transition hover:text-gray-300" href="#use-cases">Use Cases</a>
                 <a class="transition hover:text-gray-300" href="#pricing">Pricing</a>
                 <a class="transition hover:text-gray-300" href="#docs">Docs</a>
@@ -34,7 +34,7 @@
         </nav>
         <div id="mobile-menu" class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-black/20 text-lg font-medium backdrop-blur-2xl transition duration-300 md:hidden -translate-x-full">
             <a href="#!">Home</a>
-            <a href="#agents">Agents</a>
+            <a href="{% url 'about' %}">About</a>
             <a href="#use-cases">Use Cases</a>
             <a href="#pricing">Pricing</a>
             <a href="#docs">Docs</a>
@@ -300,8 +300,9 @@
             </div>
             <hr class="w-full border-white/20 mt-6" />
             <div class="flex flex-col md:flex-row items-center w-full justify-between gap-4 py-4">
-                <p>Build Ai agents for free</p>
-                <p>Copyright © 2025 <a href="https://prebuiltui.com?utm_source=genesis" target="_blank">PrebuiltUI</a>. All rights reservered. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+                <p>Get premium apps and websites from Icon Technologies Africa</p>
+                <p>Copyright © 2025 <a href="https://prebuiltui.com?utm_source=genesis" target="_blank">Icon Technologies Africa</a>. All rights reservered. Distributed by <a href="https://themewagon.com" target="_blank">Bill Blanks studios,2026.
+                </a></p>
             </div>
         </footer>
     </body>
